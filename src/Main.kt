@@ -1,7 +1,7 @@
 fun main(){
-    val name = "Максим"
-    var greeting = "Добрый день $name!"
+    val fName = "Максим"
+    var greeting = "Добрый день $fName!"
     println(greeting)
-    greeting = "Добрый вечер $name!"
+    greeting = "Добрый вечер $fName!"
     println(greeting)
 }
