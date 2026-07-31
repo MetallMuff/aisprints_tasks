@@ -1,10 +1,16 @@
 fun main() {
-    val firstName = "Татьяна Сергеевна "
-    var lastName = "Андреева "
+    val firstName = "Татьяна"
+    val midleName = "Сергеевна"
+    var lastName = "Андреева"
     var age = 20
-    println("[" + lastName + firstName + ", " + age + "]")
-    lastName = "Сидорова "
+    println(lastName)
+    println(firstName)
+    println(midleName)
+    println(age)
+    lastName = "Сидорова"
     age = 22
-    println("[" + lastName + firstName + ", " + age + "]")
-
+    println(lastName)
+    println(firstName)
+    println(midleName)
+    println(age)
 }
