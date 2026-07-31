@@ -1,7 +1,10 @@
-fun main(){
-    val name = "Максим"
-    var greeting = "Добрый день $name!"
-    println(greeting)
-    greeting = "Добрый вечер $name!"
-    println(greeting)
+fun main() {
+    val firstName = "Татьяна"
+    val middleName = "Сергеевна"
+    var lastName = "Андреева"
+    var age = 20
+    println("[$lastName $firstName $middleName, $age]")
+    lastName = "Сидорова"
+    age = 22
+    println("[$lastName $firstName $middleName, $age]")
 }
