@@ -1,7 +1,9 @@
 fun main() {
     val num = 3
+    var text = ""
     for (i in 1..9) {
         val result = num * i
-        println("$num × $i = ${result.toString().padStart(2)}")
+        text += "$num x $i = ${result}\n"
     }
+    println(text)
 }
