@@ -1,7 +1,12 @@
 fun main(){
-    val name = "Максим"
-    var greeting = "Добрый день $name!"
-    println(greeting)
-    greeting = "Добрый вечер $name!"
-    println(greeting)
+    var from = "E2"
+    var to = "E4"
+    var moveNumber = "1"
+    println("$from-$to;$moveNumber")
+    from = "D2"
+    to = "D3"
+    moveNumber = "2"
+    println("$from-$to;$moveNumber")
+
+
 }
