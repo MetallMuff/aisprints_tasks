@@ -1,9 +1,10 @@
+const val NUMBER_OF_TABLES = 13
+
 fun main() {
-    val way = "D2-D4;0"
-    val from = way.split("-")
-    println(from[0])
-    val to = way.split("-", ";")
-    println(to[1])
-    val moveNum = way.split("-", ";")
-    println(moveNum[2])
+    val todayBookedTables = 13
+    val tomorrowBookedTables = 9
+    val isAvailableToday = todayBookedTables < NUMBER_OF_TABLES
+    val isAvailableTomorrow = tomorrowBookedTables < NUMBER_OF_TABLES
+    println("Доступность столиков на сегодня: $isAvailableToday\nДоступность столиков на завтра: $isAvailableTomorrow")
+
 }
