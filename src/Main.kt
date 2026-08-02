@@ -1,10 +1,14 @@
-const val NUMBER_OF_TABLES = 13
+const val HUMIDITY = 20
+const val SEASON = "winter"
 
 fun main() {
-    val todayBookedTables = 13
-    val tomorrowBookedTables = 9
-    val isAvailableToday = todayBookedTables < NUMBER_OF_TABLES
-    val isAvailableTomorrow = tomorrowBookedTables < NUMBER_OF_TABLES
-    println("Доступность столиков на сегодня: $isAvailableToday\nДоступность столиков на завтра: $isAvailableTomorrow")
+    val isSunny = true // погода сегодня : солнечно
+    val isTentOpen = true // тент: открыт
+    val isNotWinter = SEASON != "winter"
+    println(
+        "Благоприятные ли условия сейчас для роста бобовых?" +
+                " ${isSunny && isTentOpen && HUMIDITY >= 20 && isNotWinter}"
+    )
+
 
 }
