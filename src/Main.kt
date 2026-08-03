@@ -1,16 +1,18 @@
-const val HUMIDITY = 20
+const val HUMIDITY = 22
 const val MIN_HUMIDITY_FOR_GROWTH = 20
-const val SEASON = "winter"
-
+const val SEASON = "summer"
+const val UNSUITABLE_SEASON = "winter"
 
 fun main() {
     val isSunny = true // погода сегодня : солнечно
     val isTentOpen = true // тент: открыт
-    val winter = "winter"
-    val isNotWinter = SEASON != winter
-    val hasEnoughHumidity = HUMIDITY == MIN_HUMIDITY_FOR_GROWTH
-    println(
-        "Благоприятные ли условия сейчас для роста бобовых?" +
-                " ${isSunny && isTentOpen && hasEnoughHumidity && isNotWinter}"
-    )
+    val isNotWinter = SEASON != UNSUITABLE_SEASON
+    val hasEnoughHumidity = HUMIDITY >= MIN_HUMIDITY_FOR_GROWTH
+    val isGoodConditions = isSunny && isTentOpen && hasEnoughHumidity && isNotWinter
+    if (isGoodConditions) {
+        println("Благоприятные условия для посадки!")
+    } else {
+        println("Неблагоприятные условия для посадки!")
+    }
+
 }
