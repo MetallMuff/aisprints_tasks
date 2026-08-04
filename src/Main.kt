@@ -9,7 +9,7 @@ fun main() {
     val isGoodWeather = readln().equals("хорошие", ignoreCase = true)
     println()
     val isNoDamage = !hasDamage
-    val hasEnoughCrew = crew >= 50 && crew <= 70
+    val hasEnoughCrew = crew >= 55 && crew <= 70
     val hasEnoughProvision = provision > 50
     val canDepart = (isNoDamage && hasEnoughCrew && hasEnoughProvision) ||
             (!isNoDamage && crew == 70 && provision >= 50 && isGoodWeather)
